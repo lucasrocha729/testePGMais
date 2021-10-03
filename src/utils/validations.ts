@@ -15,10 +15,9 @@ export function validateDataFile(dataFile: DataArchive[]) {
     )
     .filter((fl) => requestBlackList(fl) !== "404");
   showValidMessages(dataFileValidated);
-  return dataFile;
 }
 
-export async function showValidMessages(validMessages: DataArchive[]) {
+async function showValidMessages(validMessages: DataArchive[]) {
   for await (let element of validMessages) {
     if (
       element.mobileOperator.toUpperCase() === "VIVO" ||
@@ -29,9 +28,9 @@ export async function showValidMessages(validMessages: DataArchive[]) {
       element.mobileOperator.toUpperCase() === "CLARO" ||
       element.mobileOperator.toUpperCase() === "OI"
     ) {
-      element.idBroker === "2";
+      element.idBroker = "2";
     } else {
-      element.idBroker === "3";
+      element.idBroker = "3";
     }
 
     console.log(`${element.idMessage};${element.idBroker}`);

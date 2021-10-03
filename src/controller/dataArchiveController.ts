@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { Readable } from "stream";
 import readLine from "readline";
 import DataArchive from "../models/DataArchive";
-import { validateDataFile } from "../utils/Validations";
+import { validateDataFile } from "../utils/validations";
 
 const dataFile: DataArchive[] = [];
 
