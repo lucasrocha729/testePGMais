@@ -5,4 +5,5 @@ export default interface DataArchive {
   mobileOperator: string;
   shippingTime: string;
   message: string;
+  idBroker?: string;
 }
