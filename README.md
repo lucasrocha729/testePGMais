@@ -6,8 +6,6 @@ Repositório criado para registrar resolução do teste proposto pela empresa PG
 
 A aplicação foi construída buscando resolver todas as regras de negócio abordadas. Utilizando uma estrutura base com NodeJS, Express, Typescript e Yarn para gerenciar todos os pacotes necessários. Além disso, foi implementado o middleware Multer para intermediar o recebimento da requisição do arquivo e gerenciamento inicial dessas informações dentro da aplicação.
 
-##
-
 # Como utilizar a aplicação
 
 ## Inicializando o projeto
